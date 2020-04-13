@@ -18,21 +18,21 @@ filename="${name}_${rollno}"
 date=$(date +'%m/%d/%Y')
 # Write varaible to a new text file along with template text
 if [ ! -e ${filename} ]; then
-  echo "Date: $date  No. $sno
+  echo "Date: $(date)  No. $(sno)
 
 To
 
-$name
-$hno
-$city
+$(name)
+$(hno)
+$(city)
 
-Dear $name,
+Dear $(name),
 
 Greeating of the day,
 
-We have processed your application, and you have been alloted $rollno as your Class Roll No.
+We have processed your application, and you have been alloted $(rollno) as your Class Roll No.
 
-Same information has been sent on @email and as SMS on $mobile.
+Same information has been sent on @(email) and as SMS on $(mobile).
 
 Please acknowledge the receipt of this letter.
 
